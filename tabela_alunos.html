@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabela</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <style type="text/css">
+            .quicksand-font {
+                font-family: "Quicksand", sans-serif;
+                font-optical-sizing: auto;
+            }
+            table{
+                border-collapse: collapse;
+                font-family: "Quicksand", sans-serif;
+                font-weight: normal;
+                margin: 0 auto;
+            }
+            th,td{
+                border: 2px solid white;
+                width: 200px;
+                height: 25px;
+                font-size: 16px;
+                text-align: center;
+            }
+            .cinza{
+                background-color: #eee;
+            }
+            thead{
+                background-color: #22577A;
+                color: white;
+                font-size: 18px;
+            }
+            caption{
+                line-height: 40px;
+                height: 30px;
+                background-color: #123266;
+                font-size: 20px;
+                height: 40px;
+                margin-top: 25px;
+                border-left: 2px solid white;
+                border-right: 2px solid white;
+                font-weight: bold;
+                color: white;
+            }
+            tfoot{
+                background-color: #22577A;
+                color: white;
+            }
+            .reprovado{
+                background-color: #CE787A;
+            }
+            .total{
+                text-align: left;
+                font-weight: bold;
+            }
+            .nome{
+                text-align: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table class="tabela">
+            
+            <caption>Boletim Escolar - Turma 2024.2</caption>
+            <thead>
+                <tr>
+                    <th colspan="2" rowspan="2" scope="col">Nome</th>
+                    <th colspan="2" scope="col">Notas</th>
+                    <th rowspan="2" scope="col">Média Final</th>
+                    <th rowspan="2" scope="col">Classificação</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="2" class="nome">Maria Eduarda</td>
+                    <td>10.0</td>
+                    <td>9.0</td>
+                    <td>9.5</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+                <tr class="cinza">
+                    <td colspan="2" class="nome">João Victor</td>
+                    <td>5.0</td>
+                    <td>7.0</td>
+                    <td>6.5</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="nome">Ana Carolina</td>
+                    <td>8.5</td>
+                    <td>6.0</td>
+                    <td>7.3</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+                <tr class="cinza">
+                    <td colspan="2" class="nome">Pedro Henrique</td>
+                    <td>10.0</td>
+                    <td>8.75</td>
+                    <td>9.4</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="nome">Laura Beatriz</td>
+                    <td>6.75</td>
+                    <td>9.0</td>
+                    <td>7.9</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+                <tr class="cinza">
+                    <td colspan="2" class="nome">Rafael Gabriel</td>
+                    <td>5.0</td>
+                    <td>2.0</td>
+                    <td>3.5</td>
+                    <td class="reprovado">Reprovado(a)</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="nome">Sophia Vitória</td>
+                    <td>8.0</td>
+                    <td>8.5</td>
+                    <td>8.3</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+                <tr class="cinza">
+                    <td colspan="2" class="nome">Gustavo Henrique</td>
+                    <td>9.25</td>
+                    <td>7.0</td>
+                    <td>8.1</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="nome">Isabel Cristina</td>
+                    <td>6.0</td>
+                    <td>5.0</td>
+                    <td>5.5</td>
+                    <td class="reprovado">Reprovado(a)</td>
+                </tr>
+                <tr class="cinza">
+                    <td colspan="2" class="nome">Daniel Luiz</td>
+                    <td>7.25</td>
+                    <td>7.5</td>
+                    <td>7.4</td>
+                    <td>Aprovado(a)</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="total">Total de aprovados</td>
+                    <td>08 alunos</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="total">Total de reprovados</td>
+                    <td>02 alunos</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </body>
+</html>
